@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" media="screen" href="estilos2.css"> 
+	<title>Agenda</title>
+	<script src="agenda.js"></script>
+</head>
+<body onload="Inicio()" align="center">
+	<div id="todo">
+		<form action="" id="agenda">
+			
+			<div id= "regMostrar">
+
+				<fieldset id="frefistro">
+					<legend>Registro</legend>
+					<input type="button" id= "primero" value="<<" onclick="Primero();" >
+					<input type="button" id= "anterior" value="<" onclick = "Anterior();">
+					<label for="" id="indice"><span id="posicionActual">0</span> de <span id="posicionFinal">0</span></label>
+					<input type="button" id= "posterior" value=">" onclick="Posterior();">
+					<input type="button" id= "ultimo" value=">>" onclick="Ultimo();">
+				</fieldset>
+
+				<fieldset id="fmostrar">
+					<legend>Mostrar</legend>
+					<label for="">Nº Entrada</label>
+					<input type="text" id="numEntrada">
+					<input type="button" id= "ver" value="Ver" onclick="Ver();">
+				</fieldset>
+
+			</div>
+		
+			<fieldset id="fedicion">
+				<legend>Edición</legend>
+				<div id= "divNombre"> 
+					<label id="labelNombre" for="">Nombre</label>
+					<input type="text" id="nombre" size="20">
+
+					<input type="button" id="botonNuevo" value="Nuevo" onclick="Nuevo();">
+				</div>
+				<div id="divApellidos">
+					<label id="labelApellidos"for="">Apellidos</label>
+					<input type="text" id="apellidos" size="20">				
+					<input type="button" id="botonInicializar" value="Inicializar" class="rojo" onclick="InicializarAgenda();">
+
+				</div>
+				<div id="divTelefono">
+					<label id="labelTelefono" for="">Teléfono</label>
+					<input type="text" id="telefono" size="20">
+					<input type="button" id="botonBorrar" value="Borrar" onclick="Borrar();">
+				</div>
+				<div id="divFecha">
+					<label id="labelFecha" for="">F.Nacimiento</label>
+					<input type="date" id="fNacimiento" size="20">
+					<input type="button" id="botonGuardar" value="Guardar" onclick="Guardar();">
+				</div>
+				
+			</fieldset>
+
+			<fieldset id="fresumen">
+				<legend>Resumen</legend>
+				<textarea id="resumen" rows="10" cols="40" wrap="hard">
+				</textarea>
+			</fieldset>
+		</form>
+	</div>
+	<div id="footer">
+		
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+body{
+
+	background-image:url('fondoizquierdo.jpg');
+background-color: red;
+background-repeat: repeat;
+background-size: 110%;
+
+	
+}
+
+input[type="button"]{
+	float: left;
+	width: 60%;
+	display: block;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+	border-radius: 10px;
+	
+}
+
+#contendor{
+
+	position: absolute;
+	top:65%;
+	font-size: 1.5em;
+	font-weight: bold;
+}

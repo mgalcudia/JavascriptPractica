@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" media="screen" href="estilos.css"> <!--esta estructura sirve para buscar el formato css -->
+	<title>Calculadora</title>
+	<script src="javas.js"></script>
+	
+</head>
+<body>
+	<div id="calculadora">
+		<h4>  Calculadora </h4>
+		<input type="text" id ="pantalla" readonly="readonly" class="pantalla" value="0">
+
+		<table border="0">
+			
+			<tr> 
+				<td> 
+					<button>MC</button>
+				</td>
+
+				<td> 
+					<button>MR</button>
+				</td>
+				<td> 
+					<button>MS</button>
+				</td>
+
+				<td> 
+					<button>M+</button>
+				</td>
+				<td> 
+					<button>M-</button>
+				</td>
+			</tr>
+
+
+			<tr> 
+				<td> 
+					<button onclick="BorraUltimo();">&#8592;</button>
+				</td>
+
+				<td> 
+					<button onclick="BorraOperando();">CE</button>
+				</td>
+				<td> 
+					<button onclick="ValorCero();">C</button>
+				</td>
+
+				<td> 
+					<button onclick="CambiaSigno()">&#177;</button>
+				</td>
+				<td> 
+					<button onclick="RaizCuadrada();">&#8730;</button>
+				</td>
+			</tr>
+
+
+			<tr> 
+				<td> 
+					<button onclick= 'Pinta("7");'>7</button> 
+					
+				</td>
+
+				<td> 
+					<button onclick="Pinta('8')">8</button>
+				</td>
+				<td> 
+					<button onclick="Pinta('9')">9</button>
+				</td>
+
+				<td> 
+					<button onclick="Pinta('/');">/</button>
+				</td>
+				<td> 
+					<button onclick="Porcentaje();"  >%</button>
+				</td>
+
+			</tr>
+
+
+			<tr> 
+				<td> 
+					<button onclick="Pinta('4')">4</button>
+				</td>
+
+				<td> 
+					<button onclick="Pinta('5')">5</button>
+				</td>
+				<td> 
+					<button onclick="Pinta('6')">6</button>
+				</td>
+
+				<td> 
+					<button onclick="Pinta('*')">*</button>
+				</td>
+				<td> 
+					<button onclick="Inversa()">1/x</button>
+				</td>
+			</tr>
+
+
+			<tr> 
+				<td> 
+					<button onclick="Pinta('1')">1</button>
+				</td>
+
+				<td> 
+					<button onclick="Pinta('2')">2</button>
+				</td>
+				<td> 
+					<button onclick="Pinta('3')">3</button>
+				</td>
+
+				<td> 
+					<button onclick="Pinta('-')">-</button>
+				</td>
+				<td rowspan="2" > 
+					<button class="largo" onclick="Lee()">=</button>
+				</td>
+			</tr>
+			
+
+			<tr> 
+				<td colspan="2"> 
+					<button class= "ancho" onclick="Pinta('0')">0</button>
+				</td>
+
+
+				<td> 
+					<button onclick="coma()">,</button>
+				</td>
+
+				<td> 
+					<button onclick="Pinta('+')">+</button>
+				</td>
+
+			</tr>
+			
+		</table>
+
+	</div>
+</body>
+</html>

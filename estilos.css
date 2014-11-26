@@ -1,0 +1,68 @@
+body{
+
+	text-align: center;
+	background: #B9DBE2;
+}
+
+#derecha{
+
+background: (top,  rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+
+
+
+
+
+}
+
+/* fichero css de los estilos*/
+button{
+
+
+border-radius: 5px;
+padding: 5px;
+width:50px;
+height:50px;
+}
+
+.ancho{
+
+	width:100px;
+	height:50px;
+
+}
+
+.largo{
+
+ 	height:100px;
+	width:50px;
+
+}
+
+#calculadora{
+	border-bottom: 2px solid gray ;
+	box-shadow: 0 0 5px 0;
+	border-radius: 5px;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+	background-color: #EEEEEE;
+}
+
+table{
+	
+	text-align: center;
+
+}
+
+.pantalla{
+	margin-top: 5px;
+	background-color: #E8FFFF;
+     resize:none;
+     border-radius: 5px;
+     text-align: right;
+     font-size: 1.75em;
+     height: 50px;
+     width: 260px
+     
+
+}

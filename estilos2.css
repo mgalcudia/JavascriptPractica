@@ -1,0 +1,55 @@
+
+body, html{
+	text-align:center;
+	width: 100%;
+	height: 100%;
+	background: #B9DBE2;
+}
+
+form{
+	width: 40%;
+	margin: 0 auto;
+	padding: 1em;
+	border: 1px solid;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #888888;
+	background: white;
+}
+
+fieldset{
+	border-radius: 5px;
+}
+
+fieldset>div{
+	
+	text-align: left;
+	margin: .5em;
+
+}
+
+fieldset>div>input[type="button"]{
+	float: right;
+	width: 20%;
+
+}
+
+fieldset>div>input[type="text"], input[type="date"]{
+	width: 40%;
+	
+}
+
+fieldset>div>label{
+	width: 25%;
+	float:left;
+}
+
+fieldset>textarea{
+	width:100%;
+	margin: 0 auto;
+	border:none;
+}
+
+
+input[type="button"].rojo{
+	background: #07B8D3;
+}
